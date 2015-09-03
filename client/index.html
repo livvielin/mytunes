@@ -8,7 +8,6 @@
     <script src="bower_components/backbone/backbone.js"></script>
 
     <script src="data/data.js"></script>
-     <script src="data/queueData.js"></script>
 
     <script src="models/SongModel.js"></script>
     <script src="collections/Songs.js"></script>
@@ -26,7 +25,6 @@
       $(function() {
         // set up model objects
         var library = new Songs(songData);
-        // var songQueue = new SongQueue(queueData);
         var app = new AppModel({library: library});
 
         // build a view for the top level of the whole app
